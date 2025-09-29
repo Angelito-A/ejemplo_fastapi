@@ -19,7 +19,7 @@ def get_db():
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World with Database!"}
+    return {"message": "Soy Hacker D:!"}
 
 @app.get("/items")
 async def get_items():
@@ -44,3 +44,4 @@ if __name__ == "__main__":
     import uvicorn
     port = int(os.getenv("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
+
